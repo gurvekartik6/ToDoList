@@ -5,5 +5,12 @@ public class ArrayListDemo{
         ArrayList<String> listLanguages = new ArrayList<>();
         //First method : add
         listLanguages.add("C");
+        listLanguages.add("C++");
+        listLanguages.add("Java");
+        listLanguages.add("Python");
+        listLanguages.add("PHP");
+        listLanguages.add("GO");
+        //To display the list 
+        System.out.println("List :"+listLanguages);
     }
 }
