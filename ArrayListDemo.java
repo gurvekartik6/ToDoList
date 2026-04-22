@@ -10,6 +10,9 @@ public class ArrayListDemo{
         listLanguages.add("Python");
         listLanguages.add("PHP");
         listLanguages.add("GO");
+        //Inserting Element at specified Index
+        listLanguages.add(3,"Swfit");
+        listLanguages.add(4,"Rust");
         //To display the list 
         System.out.println("List :"+listLanguages);
         //using for loop
