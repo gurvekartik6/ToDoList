@@ -19,6 +19,8 @@ public class ArrayListDemo{
         //Remove the element from the list
         listLanguages.remove(1);
         listLanguages.remove(4);
+        //Delete the List
+        listLanguages.clear();
         //To display the list 
         System.out.println("List :"+listLanguages);
         //using for loop
