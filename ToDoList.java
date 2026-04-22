@@ -16,34 +16,46 @@ public class ToDoList{
             int choice = input.nextInt();
             switch(choice){
                 case 1:
-                    addTask();
+                    addTask(tasks,input);
                     break;
                 case 2:
                     removeTask();
                     break;
                 case 3:
-                    viewTask();
+                    viewTask(tasks);
                     break;
                 case 4:
                     updateTask();
                     break;
                 case 5:
-                    System.exit(0);
+                    System.exit(0);                    
+                
                 default:
                     System.out.println("Invalid Choice");
             }
         }
     }
-    static void addTask(){
-        System.out.println("Task Added");
+    static void addTask(ArrayList<String> tasks , Scanner input){
+        System.out.println("Enter the task You want to Add :");
+        input.nextLine();
+        String getTask = input.nextLine();
+        tasks.add(getTask);
+        System.out.println("Task added Succcessfully");
     }
     static void removeTask(){
         System.out.println("Task Removed");
     }
-    static void viewTask(){
-        System.out.println("Task Viewed");
-    }
     static void updateTask(){
         System.out.println("Task Updated");
+    }
+    static void viewTask(ArrayList<String> tasks){
+        if(tasks.isEmpty()){
+            System.out.println("No tasks added");
+        }else{
+            System.out.println("Your Tasks :");
+            for(int i = 0 ; i < tasks.size() ; i++){
+                System.out.println(tasks.get(i));
+            }
+        }
     }
 }
