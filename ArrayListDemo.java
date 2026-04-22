@@ -12,5 +12,9 @@ public class ArrayListDemo{
         listLanguages.add("GO");
         //To display the list 
         System.out.println("List :"+listLanguages);
+        //using for loop
+        for(int i = 0 ; i < listLanguages.size() ; i++){
+            System.out.println(listLanguages.get(i));
+        }
     }
 }
