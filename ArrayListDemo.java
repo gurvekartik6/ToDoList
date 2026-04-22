@@ -13,6 +13,9 @@ public class ArrayListDemo{
         //Inserting Element at specified Index
         listLanguages.add(3,"Swfit");
         listLanguages.add(4,"Rust");
+        //Changing the existing element
+        listLanguages.set(1,"C#");
+        listLanguages.set(2,"COBOL");
         //To display the list 
         System.out.println("List :"+listLanguages);
         //using for loop
