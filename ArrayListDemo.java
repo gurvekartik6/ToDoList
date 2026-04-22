@@ -16,6 +16,9 @@ public class ArrayListDemo{
         //Changing the existing element
         listLanguages.set(1,"C#");
         listLanguages.set(2,"COBOL");
+        //Remove the element from the list
+        listLanguages.remove(1);
+        listLanguages.remove(4);
         //To display the list 
         System.out.println("List :"+listLanguages);
         //using for loop
